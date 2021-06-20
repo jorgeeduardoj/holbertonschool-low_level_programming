@@ -23,7 +23,7 @@ int main(void)
 			{
 				for (l = '0'; l <= '9'; l++)
 				{
-					if (i >= k && j >= l)
+					if (i > k || (i == k && j >= l))
 					{
 					}
 					else
@@ -41,7 +41,6 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 					}
-					
 				}
 			}
 		}
