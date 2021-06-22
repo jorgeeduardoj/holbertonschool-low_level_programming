@@ -5,22 +5,23 @@
  *
  *  Return: void
  */
-
 void times_table(void)
 {
-	int i;
-	int j;
-	int mul;
-	int first;
-	int last;
+	int i, j, mul, first, last;
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
 			mul = (i * j);
+			if (j != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			if (mul <= 9)
 			{
+				_putchar(' ');
 				_putchar(mul + '0');
 			}
 			else
@@ -33,12 +34,6 @@ void times_table(void)
 			if (j == 9)
 			{
 				_putchar('\n');
-			}
-			else
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
 			}
 		}
 	}
