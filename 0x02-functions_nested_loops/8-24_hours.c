@@ -1,25 +1,39 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * print_last_digit - prints the last digit of a number
+ * jack_bauer - prints the last digit of a number
  *
- * @r: parameter to validate
- *
- * Return: 0
+ *  Return: void
  */
 
-int print_last_digit(int r)
+void jack_bauer(void)
 {
-	int last = r % 10;
+	int i;
+	int j;
+	int k;
+	int l;
 
-	if (last >= 0)
+	for (i = '0'; i <= '2'; i++)
 	{
-		_putchar(last + '0');
+		for (j = '0'; j <= '9'; j++)
+		{
+			for (k = '0'; k <= '5'; k++)
+			{
+				for (l = '0'; l <= '9'; l++)
+				{
+					putchar(i);
+					putchar(j);
+					putchar(':');
+					putchar(k);
+					putchar(l);
+					if (i == '2' && j == '3' && k == '5' && l == '9')
+					{
+						putchar('\n');
+						return;
+					}
+					putchar('\n');
+				}
+			}
+		}
 	}
-	else
-	{
-		last = -1 * last;
-		_putchar(last + '0');
-	}
-	return (last);
 }
