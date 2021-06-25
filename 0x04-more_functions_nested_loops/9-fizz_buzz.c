@@ -22,7 +22,7 @@ int main(void)
 		{
 			if (i == 100)
 			{
-				printf("Buzz");
+				printf("Buzz\n");
 			}
 			else
 			{
@@ -34,4 +34,5 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
+	return (0);
 }
