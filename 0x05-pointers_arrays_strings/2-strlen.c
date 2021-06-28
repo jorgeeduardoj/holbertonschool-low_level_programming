@@ -9,7 +9,7 @@ int _strlen(char *s)
 {
 	int i;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 0; i <= 100000; i++)
 	{
 		if (s[i] == '\0')
 		{
