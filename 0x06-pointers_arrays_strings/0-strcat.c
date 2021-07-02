@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _strcat - concatenates two strings
- * @src: first 
+ * @src: first
  * @dest: second
  * Return: char*
  */
