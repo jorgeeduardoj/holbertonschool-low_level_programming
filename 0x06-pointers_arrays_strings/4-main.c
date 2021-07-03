@@ -2,13 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- * @a: an array of integers
- * @n: the number of elements to swap
+ * string_toupper -  changes all lowercase letters of a string to uppercas
  *
- * Return: nothing.
+ * Return: char*.
  */
-void print_array(int *a, int n)
+char *string_toupper(char *a)
 {
     int i;
 
