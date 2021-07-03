@@ -1,20 +1,20 @@
 #include "holberton.h"
 /**
- * _strcmp - compare two strings
- * @s1: compare
- * @s2: compare
- * Return: char*
+ * reverse_array - compare two strings
+ * @a: reverese
+ * @n: reverse
+ * Return: Always 0
  */
-int _strcmp(char *s1, char *s2)
+void reverse_array(int *a, int n)
 {
-	int i;
+	int i, j, k = 0, tem[500];
 
-	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
+	for (i = 0; i < n; i++)
 	{
-		if (s1[i] != s2[i])
-		{
-			return (s1[i] - s2[i]);
-		}
+		tem[i] = a[i];
 	}
-	return (0);
+	for (j = 0; j < n; j++)
+	{
+		a[k] = tem[j];
+	}
 }
