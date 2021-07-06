@@ -1,16 +1,16 @@
 #include "holberton.h"
 /**
- * string_toupper - changes lowercase to uppercase
+ * cap_string - capitalizes all words of a string
  * @a: char to change
  * Return: char*
  */
-char *string_toupper(char *a)
+char *cap_string(char *a)
 {
 	int i;
-	
+
 	for (i = 0; a[i] != '\0'; i++)
 	{
-		if (a[i] >= 'a' && a[i] <= 'z')
+		if (a[i] >= 'a' && a[i] <= 'z' && a[i-1] == ' ')
 		{
 			a[i] = a[i] - 32;
 		}
