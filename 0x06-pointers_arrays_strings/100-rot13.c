@@ -18,7 +18,7 @@ char *rot13(char *src)
 			if (src[i] == first[j])
 			{
 				src[i] = code[j];
-                break;
+				break;
 			}
 		}
 	}
