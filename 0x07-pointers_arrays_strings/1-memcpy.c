@@ -2,8 +2,8 @@
 
 /**
 * _memcpy - copies memory area
-* @s: string
-* @b: digit
+* @src: source
+* @dest: destination
 * @n: number of bytes
 * Return: char*
 */
